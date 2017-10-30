@@ -18,4 +18,4 @@ wifaddress=`bx hd-public ${m} | bx hd-to-ec | bx ec-to-address`
 # generate m/0/12'/4
 #bx hd-private | bx hd-private --index 12 --hard | bx hd-private --index 4
 
-echo -e "public: ${pub}\nprivate: ${priv}\nWIF private: ${wifpriv}\nWIF address: ${wifaddress}"
+echo -e "Master Private: ${m}\nMaster Public: ${pub}\nChain Code: ${priv}\nWIF private: ${wifpriv}\nWIF address: ${wifaddress}"
